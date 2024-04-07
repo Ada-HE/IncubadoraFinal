@@ -1,0 +1,186 @@
+.headerStyle {
+    background-color: #F7C188;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+  }
+  
+  .brandContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoStyle {
+    height: 85px;
+  }
+  
+  .brandName {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .navStyle {
+    display: flex;
+  }
+  
+  .navListStyle {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navItemStyle {
+    margin: 0 1rem;
+    position: relative;
+  }
+  
+  .navLinkStyle {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .iconStyle {
+    margin-right: 0.5rem;
+  }
+  
+  .moreOptions {
+    cursor: pointer;
+    font-size: 18;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #F7C188;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    right: 0;
+    white-space: nowrap;
+    z-index: 1000; /* Este valor debe ser más alto que el de otros elementos */
+  }
+  
+
+  
+  .navItemStyle:hover .dropdownContent {
+    display: block;
+  }
+  
+  .dropdownLinkStyle {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  .iconDropdownStyle {
+    margin-right: 10px;
+  }
+  
+  .dropdownLinkStyle:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .headerStyle {
+    background-color: #F7C188;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+.brandContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoStyle {
+    height: 85px;
+}
+
+.brandName {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.navStyle {
+    display: flex;
+}
+
+.navListStyle {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navItemStyle {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.navLinkStyle {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navLinkStyle:hover {
+    color: rgb(150, 134, 134); /* Cambia el color del texto a blanco al pasar el mouse */
+}
+
+.iconStyle {
+    margin-right: 0.5rem;
+}
+
+.moreOptions {
+    cursor: pointer;
+    font-size: 18;
+    margin: 10px;
+    padding: 5px;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #F7C188;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    right: 0;
+    white-space: nowrap;
+    z-index: 1000; /* Este valor debe ser más alto que el de otros elementos */
+}
+
+.navItemStyle:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownLinkStyle {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.iconDropdownStyle {
+    margin-right: 10px;
+}
+
+.dropdownLinkStyle:hover {
+    background-color: #c3c0c0;
+}
+
+/* Asegúrate de agregar cualquier estilo adicional que sea necesario */
+  

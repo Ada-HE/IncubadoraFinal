@@ -1,0 +1,49 @@
+.confirmacion-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .confirmacion-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .confirmacion-container input {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .confirmacion-container button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .confirmacion-container button:hover {
+    background-color: #43a047;
+  }
+  
+  .confirmacion-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    margin-top: 10px;
+  }
+  

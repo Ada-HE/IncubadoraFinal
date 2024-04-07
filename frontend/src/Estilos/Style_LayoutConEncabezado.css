@@ -1,0 +1,30 @@
+/* Establece el estilo para el contenedor principal de la aplicación */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima del 100% del viewport */
+}
+
+/* Asegura que el contenido ocupe el espacio disponible */
+.content-wrap {
+  flex: 1; /* Ocupa el espacio disponible */
+  padding-bottom: var(--footer-height); /* Añade un padding inferior del tamaño del footer para evitar solapamiento */
+}
+
+/* Estilo para el footer */
+.footer {
+  height: var(--footer-height); /* Establece una altura variable para el footer */
+  background-color: #381904; /* O el color de tu elección */
+  color: white;
+}
+
+/* En una media query, puedes ajustar el padding para dispositivos más pequeños */
+@media (max-width: 768px) {
+  .content-wrap {
+    padding-bottom: var(--footer-height-mobile); /* Ajusta el padding para dispositivos móviles */
+  }
+  
+  .footer {
+    height: var(--footer-height-mobile); /* Ajusta la altura del footer para dispositivos móviles */
+  }
+}

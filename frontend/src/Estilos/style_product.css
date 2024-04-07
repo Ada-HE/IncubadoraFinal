@@ -1,0 +1,76 @@
+.vincular-dispositivo-container {
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px; /* Ajusta el ancho máximo según prefieras */
+  margin: 0 auto; /* Centrar el contenedor */
+  font-family: 'Arial', sans-serif; /* Cambia la tipografía si deseas */
+}
+
+.vincular-dispositivo-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.vincular-dispositivo-container p {
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.vincular-dispositivo-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
+}
+
+.input-group input::placeholder {
+  color: #AAA;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #db7f1c;
+  box-shadow: 0 0 0 2px rgba(49, 170, 210, 0.2);
+}
+
+button#b {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button#b:hover {
+  background-color: #ff9537;
+}
+
+.mensaje-confirmacion {
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+}

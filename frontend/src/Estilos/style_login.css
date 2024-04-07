@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background: #f1d2b1;
+}
+
+
+.d1 {
+    width: 100%;
+    /* Responsivo */
+    max-width: 450px;
+    /* Máximo ancho */
+    padding: 2pc 1pc;
+    margin: 25px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 30px 75px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 400px) {
+
+    /* Para pantallas pequeñas */
+    .d1 {
+        width: 95%;
+        padding: 1.5pc 1pc;
+    }
+}
+
+h1 {
+    font-size: 2pc;
+    margin-bottom: 2pc;
+    color: #000000;
+    /* Texto más oscuro para contraste */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form input {
+    width: 90%;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #f3f3f3;
+    margin-top: 15px;
+}
+
+.titulo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    /*padding: 10px;*/
+    top: 0;
+    left: 0;
+}
+
+.titulo img {
+    width: 80px;
+    margin-right: 90px
+}
+
+#ba {
+    margin: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-out 200ms;
+}
+
+#ba:hover {
+    color: #ff0000;
+    text-shadow: none;
+    animation: none !important;
+}
+
+#ba::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -3px;
+    top: -3px;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    transition: all ease-out 200ms;
+    animation: efecto-luz 2s ease-in 0 infinite normal both;
+}
+
+#ba:hover::before,
+#ba:hover::after {
+    border-color: #fe0000;
+}
+
+#ba:hover::before {
+    filter: blur(1px);
+}
+
+select[name="selectTipo"] {
+    font-family: "fondo", sans-serif;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+select[name="selectTipo"]:hover {
+    background-color: #f8f8f8;
+}
+
+select[name="selectTipo"]:focus {
+    border-color: #ff6a00;
+}
+
+.link {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: underline;
+    /* Agrega un subrayado */
+    color: #0559b3;
+    font-weight: normal;
+    font-size: 1em;
+    /* Reduce el tamaño del texto, ajusta según necesidades */
+    transition: background-color 0.3s ease;
+}
+
+.link:hover {
+    background-color: #f2f2f2;
+    text-decoration: none;
+    /* Quita el subrayado al pasar el cursor */
+}
+
+#usuario {
+    width: 96.2%;
+}
+
+#tipo {
+    width: 50%;
+}
+
+.input-group {
+    position: relative;
+    /* Otros estilos que ya puedas tener para input-group */
+}
+
+.password-container {
+    position: relative;
+    /* Esto es crucial para el posicionamiento absoluto del botón */
+}
+
+.password-input {
+    width: 100%;
+    padding-right: 40px;
+    /* Asegúrate de tener un relleno adecuado para el botón del ojo */
+    /* Resto de tus estilos para password-input */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    /* Ajusta este valor según el tamaño del ícono y el padding del input */
+    top: 42%;
+    /* Centrar verticalmente el botón */
+    transform: translateY(-50%);
+    /* Compensar la altura del botón */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: auto;
+    max-width: 40px;
+}
+
+/* Estilos para el ícono dentro del botón, si es necesario */
+.password-toggle>.faIcon {
+    /* Puedes agregar estilos adicionales para el ícono aquí */
+}

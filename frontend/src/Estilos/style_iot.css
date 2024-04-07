@@ -1,0 +1,44 @@
+.formulario-detalles {
+    max-width: 500px;
+    padding: 2rem;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-detalles div {
+    margin-bottom: 1rem;
+}
+
+.formulario-detalles label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.formulario-detalles input,
+.formulario-detalles textarea {
+    width: 100%; /* Asegura que el input tome todo el ancho del contenedor */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.formulario-detalles button {
+    padding: 0.5rem;
+    background-color: #f2b807;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario-detalles button:hover {
+    background-color: #eca106;
+}
+
+.formulario-detalles textarea {
+    resize: none; /* Esto evita que el textarea sea redimensionable */
+}

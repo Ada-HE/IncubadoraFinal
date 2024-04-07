@@ -1,0 +1,94 @@
+/* Estilos generales para la tabla */
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .form-table th,
+  .form-table td {
+    padding: 12px 15px;
+  }
+  
+  .form-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .form-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .form-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .form-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+  
+  /* Botones */
+  .actualizar-boton, .eliminar-boton {
+    cursor: pointer;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .actualizar-boton {
+    background-color: #51a60b;
+    color: #000;
+    margin: 10%;
+  }
+  
+  .eliminar-boton {
+    background-color: #a20c1b;
+    color: #fff;
+    margin: 10%;
+
+  }
+  
+  /* Estilos para el formulario de edición */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input[type="text"],
+  form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+  }
+  /*
+  form button:not([type="submit"]) {
+    background-color: #6c757d;
+    color: white;
+  }*/

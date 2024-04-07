@@ -1,0 +1,153 @@
+body {
+    background: #f1d2b1;
+}
+
+.metodo-recuperacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.metodo-label {
+    margin-right: 10px;
+    /* Espacio entre el label y el radio button */
+}
+
+.d1 input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+    /* Hacer un poco más grande el radio button */
+    margin-bottom: 8px;
+    /* Espacio debajo del radio button */
+    cursor: pointer;
+    /* Cambia el cursor a mano cuando pasas sobre el radio button */
+}
+
+
+.d1 {
+    width: 450px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 30px 75px rgb(0, 0, 0, 0.3);
+}
+
+.d1 h2 {
+    margin-bottom: 20px;
+    color: #cc6214;
+    ;
+}
+
+.d1 label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.d1 input[type="text"],
+.d1 input[type="email"],
+.d1 input[type="number"],
+.d1 input[type="password"],
+.d1 select {
+    width: calc(100% - 24px);
+    /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.d1 input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+    /* Hacer un poco más grande el radio button */
+    margin-bottom: 8px;
+    /* Espacio debajo del radio button */
+}
+
+.d1 .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12spx;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.d1 .submit-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    /* Sutil elevación al pasar el cursor */
+}
+
+/* Estilos para la pregunta secreta y el correo electrónico, ocultos por defecto */
+#recuperacionEmail, #recuperacionPregunta {
+    display: none;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las imágenes */
+.img23 {
+
+    margin-bottom: 20px;
+    width: 120px;
+    /* Tamaño más grande */
+    height: 120px;
+    /* Tamaño más grande */
+    object-fit: cover;
+    /* Mantener la proporción de la imagen */
+}
+
+
+#b {
+    margin: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 0;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-out 200ms;
+}
+
+#b:hover {
+    color: #ff0000;
+    text-shadow: 2px 2px 2px #000000;
+    animation: none !important;
+}
+
+#b::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -3px;
+    top: -3px;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    transition: all ease-out 200ms;
+    animation: efecto-luz 2s ease-in 0 infinite normal both;
+}
+
+#b:hover::before,
+#b:hover::after {
+    border-color: #fe0000;
+}
+
+#b:hover::before {
+    filter: blur(1px);
+}
+
+.d1 p {
+    font-size: small;
+}

@@ -1,0 +1,128 @@
+.perfil-container {
+  max-width: 800px; /* Ajusta el ancho máximo del contenedor */
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; /* Usa flexbox para organizar en columnas */
+  flex-direction: row; /* Alineación horizontal */
+  flex-wrap: wrap; /* Permite envolver elementos si no caben en una fila */
+  justify-content: center; /* Centra los elementos */
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+}
+
+.perfil-imagen-container {
+  flex-basis: 100%; /* Hace que el contenedor de la imagen ocupe el ancho completo */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.perfil-titulo {
+  font-size: 2rem; /* Tamaño de fuente para el título 'Perfil' */
+  font-weight: bold; /* Negrita para el título */
+  margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.perfil-imagen {
+  width: 150px; /* Tamaño de la imagen */
+  height: 150px; /* Tamaño de la imagen */
+  border-radius: 50%; /* Hace la imagen redonda */
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+
+.perfil-form {
+  display: flex; /* Usa flexbox para organizar los campos */
+  flex-direction: row; /* Alineación horizontal de los campos */
+  flex-wrap: wrap; /* Permite envolver los elementos */
+  justify-content: space-between; /* Espacio entre los elementos */
+}
+
+#bp {
+  color: #000000;
+  margin: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-out 200ms;
+}
+
+#bp:hover {
+  color: #ff0000;
+  text-shadow: none;
+  animation: none !important;
+}
+
+#bp::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -3px;
+  top: -3px;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  transition: all ease-out 200ms;
+  animation: efecto-luz 2s ease-in 0 infinite normal both;
+}
+
+#bp:hover::before,
+#bp:hover::after {
+  border-color: #fe0000;
+}
+
+#bp:hover::before {
+  filter: blur(1px);
+}
+
+
+.perfil-form > div {
+  flex-basis: 48%; /* Los divs hijos ocuparán casi la mitad del ancho del formulario */
+}
+
+.perfil-form label {
+  margin-top: 10px;
+  display: block; /* Hace que la etiqueta ocupe su propia línea */
+}
+
+.perfil-form input {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Ajusta a la anchura máxima del contenedor padre */
+}
+
+.perfil-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos hijos horizontalmente */
+  justify-content: center; /* Centra los elementos hijos verticalmente */
+  margin-top: 20px; /* Espacio adicional en la parte superior si es necesario */
+}
+
+.perfil-button {
+  padding: 10px 20px; /* Añade más padding horizontal si es necesario */
+  background-color: #f1d2b1; /* Color de fondo del botón */
+  color: #333; /* Color de texto del botón */
+  border: none;
+  border-radius: 4px; /* Bordes redondeados del botón */
+  cursor: pointer;
+  width: 70%; /* Ancho del botón según preferencias */
+  margin-top: 20px; /* Espacio antes del botón */
+}
+
+.perfil-button:hover {
+  background-color: #e1c2a1; /* Color de fondo del botón al pasar el mouse */
+}
+.perfilB{
+  margin-left: 25%;
+}

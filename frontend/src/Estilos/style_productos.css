@@ -1,0 +1,174 @@
+.d3 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 10px; Añade un espacio entre cada input y label */
+}
+
+.d3 h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.d3 label {
+
+  margin: 0 auto;  
+  text-align: center;
+  width: 100%;
+}
+
+.d3 input{
+  width: calc(100%); /* Ajusta el ancho teniendo en cuenta el padding */
+  padding: 10px;
+  margin-bottom: 15px; /* Espacio después de cada input */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.d3 select {
+  width: calc(60%); /* Ajusta el ancho teniendo en cuenta el padding */
+  padding: 10px;
+  margin-bottom: 15px; /* Espacio después de cada input */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.d3 textarea{
+  width: calc(100%); /* Ajusta el ancho teniendo en cuenta el padding */
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 15px; /* Espacio después de cada input */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+.d3 input[type="file"] {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.d3 .submit-button {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #FFA07A;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Estilo de mensajes de éxito y error */
+.success-message,
+.error-message {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Estilos para la tabla */
+.form-table-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%; /* O el ancho que prefieras */
+  overflow-x: auto; /* Si la tabla es muy ancha para la pantalla */
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.form-table th,
+.form-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.form-table th {
+  background-color: #FFA07A;
+  color: #fff;
+}
+
+.form-table img {
+  width: 50px;
+  height: auto;
+}
+
+
+#precio{
+  width: 30%;
+}
+.forma{
+    display: block;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+/* Estilos para los botones */
+#eliminarB {
+  padding: 6px 12px;
+  background-color: #ff4136;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#eliminarB:hover {
+  background-color: #b02319;
+}
+
+#modificarB {
+  padding: 6px 12px;
+  background-color: #14ce4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#modificarB:hover {
+  background-color: #0e9a3b;
+}
+.modal-contentte {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-contentte textarea{
+  width: calc(100%); /* Ajusta el ancho teniendo en cuenta el padding */
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 15px; /* Espacio después de cada input */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

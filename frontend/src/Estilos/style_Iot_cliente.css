@@ -1,0 +1,251 @@
+.control-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 1200px;
+  width: 100%;
+  position: relative; /* Establece la posición relativa para el posicionamiento absoluto del botón */
+}
+
+.back-button {
+  position: absolute;
+  top: 20px; /* Ajusta la posición desde la parte superior del formulario */
+  right: 20px; /* Ajusta la posición desde la izquierda del formulario */
+  padding: 10px 20px;
+  background-color: #5f5f5f;
+  border: 1px solid #424141;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 80px;
+  color: black;
+  font-size: 14px;
+  margin-top: 27px;
+  margin-right: 25px;
+  z-index: 10; /* Asegura que el botón esté por encima de otros elementos */
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #FFA500; /* Color naranja cuando el cursor pasa por encima */
+}
+.device {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  /*max-width: 800px;*/
+}
+
+.device-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.device-info img {
+  max-width: 700px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.device-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 200px;
+  margin: 0 10px;
+  padding: 15px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #31aad2;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #2591b8;
+}
+
+@media (max-width: 768px) {
+  .device {
+    flex-direction: column;
+  }
+
+  .device-info {
+    margin-bottom: 20px;
+  }
+
+  .device-controls {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+.device-focos {
+  height: 350px;
+  display: flex;
+}
+
+.device-tem {
+  display: flex;
+}
+.name, .name h1{
+  background-color: #392104;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.humidity-indicator p{
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+  align-items: center;
+}
+.humidity-widget {
+  position: relative;
+  width: 120px; /* El tamaño del SVG */
+  height: 120px; /* El tamaño del SVG */
+  margin: 20px auto; /* Centrar el widget */
+  background-color: #000; /* Color de fondo */
+  border-radius: 50%; /* Hacerlo redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.humidity-circle {
+  transform: rotate(-90deg); /* Rotar el gráfico para que comience desde la parte superior */
+}
+
+.humidity-percentage {
+  position: absolute;
+  color: #fff; /* Color de texto */
+  font-size: 2em; /* Tamaño de texto */
+}
+.temperature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  width: auto;
+}
+
+.temperature-svg {
+  margin: 10px 0;
+}
+
+.temperature-card p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+}
+.tank-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.tank-status-container {
+  border: 3px solid #ccc;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  box-shadow: inset 0 -3px 3px rgba(0,0,0,0.2);
+  margin: 10px;
+}
+
+.tank-water {
+  background-image: 
+    linear-gradient(
+      rgba(255, 255, 255, 0.5) 50%, 
+      transparent 50%
+    ),
+    linear-gradient(
+      90deg, 
+      rgba(255, 255, 255, 0.5) 50%, 
+      transparent 50%
+    );
+  background-size: 20px 20px, 20px 20px;
+  background-position: 0 0, 10px 10px;
+  height: 50%; /* Ajustar esto dinámicamente en base al estado del tanque */
+  transition: height 0.3s ease-in-out;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  borderRadius: '0 0 8px 8px';
+}
+
+.tank-water::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #a2d0c1 0%, #0a506b 100%);
+  opacity: 0.7;
+}
+
+/* Estilos adicionales para la etiqueta y el porcentaje del tanque */
+.tank-card h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.tank-card p {
+  font-size: 1em;
+  color: #555;
+}

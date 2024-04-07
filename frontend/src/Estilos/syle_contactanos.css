@@ -1,0 +1,66 @@
+/* Estilo general para ambos contenedores */
+.box-container {
+    display: flex;
+    justify-content: space-between; /* Espacia las cajas uniformemente */
+    gap: 20px; /* Espacio entre las cajas */
+    flex-wrap: wrap; /* Permite que las cajas se ajusten en pantallas más pequeñas */
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centra el contenedor en la página con espacio arriba y abajo */
+}
+
+/* Ajustes individuales para las cajas */
+.box {
+    flex: 2; /* La caja de preguntas frecuentes toma 2/3 del espacio */
+    background-color: #fff; /* Fondo blanco para las cajas */
+    color: #333; /* Color de texto oscuro para contraste */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+    /* Resto de estilos */
+}
+
+.box-ubi {
+    flex: 1; /* La caja de sucursales toma 1/3 del espacio */
+    background-color: #fff; /* Fondo blanco para las cajas */
+    color: #333; /* Color de texto oscuro para contraste */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+    /* Resto de estilos */
+}
+
+/* Estilos para los subtítulos */
+.subtitulo {
+    font-size: 2rem; /* Tamaño de fuente más grande para los subtítulos */
+    margin-bottom: 1rem; /* Espacio después del subtítulo */
+    text-align: center; /* Centrar el subtítulo */
+}
+
+/* Estilos para el texto de las cajas */
+.Psistema {
+    font-size: 1rem; /* Tamaño de fuente para el contenido */
+    margin-bottom: 0.5rem; /* Espacio entre párrafos */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.Psistema p {
+    margin-top: 0.5rem; /* Espacio antes de cada pregunta */
+}
+
+/* Estilos para la imagen dentro de la caja de sucursales */
+.box-ubi .img {
+    max-width: 80%; /* Un ancho máximo para la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 10px auto; /* Espacio arriba y abajo y centra la imagen horizontalmente */
+    display: block; /* La imagen es un bloque para permitir el margen automático */
+}
+
+/* Ajustes de estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    .box, .box-ubi {
+        width: 100%; /* Las cajas ocupan todo el ancho en dispositivos móviles */
+        margin-bottom: 20px; /* Añade espacio entre las cajas en dispositivos móviles */
+    }
+}

@@ -1,0 +1,63 @@
+.container {
+  max-width: 1200px;
+  margin: 4rem auto; /* Añade margen superior e inferior para separar del encabezado y pie */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: #f1d2b1; /* Color de encabezado */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.content {
+  display: flex;
+  padding: 2rem; /* Añade relleno alrededor del contenido principal */
+}
+
+.sidebar {
+  background-color: #f1d2b1; /* Fondo de la barra lateral */
+  padding: 20px;
+  width: 30%;
+}
+
+.info p {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  padding: 20px;
+  width: 70%; /* Ajusta al ancho correcto si la barra lateral es del 30% */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #f3c593;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+}

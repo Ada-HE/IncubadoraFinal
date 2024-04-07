@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f1d2b1; /* Color de fondo más claro */
+  color: #333; /* Color de texto más oscuro para legibilidad */
+  line-height: 1.6;
+}
+
+/* Estilos del formulario */
+.d1 {
+  background-color: #fff; /* Fondo blanco para el formulario */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 30px 75px rgba(0, 0, 0, 0.3);
+  margin: 2rem auto; /* Centrado con espacio arriba y abajo */
+  width: 450px; /* Ancho fijo del formulario */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align children horizontally */
+  justify-content: center; /* Center align children vertically */
+  text-align: center;
+}
+.d1 h2,
+.d1 label,
+.d1 img {
+  text-align: center; /* Center the text for these elements */
+  width: 35%; /* Allows these elements to fill their container */
+  margin: 0 auto; /* Centers block elements with a defined width */
+}
+
+.d1 h2 {
+  margin-top: 1rem;
+}
+
+.d1 label {
+  margin-top: 0.5rem; /* Adjust as per your design */
+}
+
+/* Ensure inputs and selects take full width of their container */
+.d1 input,
+.d1 select {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  margin: 10px 0; /* Spacing above and below each input */
+}
+
+h2 {
+  color: #cc6214; /* Color naranja para los títulos */
+  margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form select {
+  width: 100%; /* Anchura completa para aprovechar el espacio */
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #e4e4e4;
+}
+
+/* Botón de formulario */
+#b {
+  display: block; /* Bloque para ocupar el ancho disponible */
+  width: auto;
+  background-color: #cc6214; /* Color naranja para el botón */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+#b:hover {
+  background-color: #e6733b; /* Color naranja más claro para el hover */
+}
+
+/* Estilos de la tabla */
+.table-container {
+  width: 100%; /* Aprovechar el ancho de pantalla */
+  overflow-x: auto; /* Desplazamiento horizontal si la tabla es muy ancha */
+}
+
+.centered-table {
+  margin: 20px auto; /* Centrado con margen arriba y abajo */
+  border-collapse: collapse; /* Bordes colapsados para un aspecto limpio */
+  width: 100%; /* Anchura al 100% dentro de su contenedor */
+  background-color: #fff; /* Fondo blanco para contraste */
+}
+
+.centered-table th,
+.centered-table td {
+  padding: 10px; /* Espaciado adecuado */
+  text-align: center; /* Texto centrado */
+  border-bottom: 1px solid #ccc; /* Línea sutil entre filas */
+}
+
+.centered-table th {
+  background-color: #f7c188; /* Color de fondo para los encabezados */
+  color: white; /* Color de texto para contraste */
+}
+
+.centered-table tr:nth-child(even) td {
+  background-color: #f9ede5; /* Color de fondo alterno para las filas */
+}
+
+.centered-table tr:hover td {
+  background-color: #f3e2d9; /* Color de fondo al pasar el cursor */
+}
+
+/* Botones dentro de la tabla */
+.submit-button {
+  background-color: #cc6214; /* Color naranja para los botones */
+  color: white; /* Color de texto para contraste */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #e6733b; /* Color naranja más claro para el hover */
+}
+
+/* Media Queries para la responsividad */
+@media screen and (max-width: 768px) {
+  .d1 {
+    width: 95%; /* Más ancho en dispositivos pequeños para mejor uso del espacio */
+  }
+}
+#b {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 0;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-out 200ms;
+}
+
+#b:hover {
+  color: #ff0000;
+  text-shadow: 2px 2px 2px #000000;
+  animation: none !important;
+}
+
+#b::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -3px;
+  top: -3px;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  transition: all ease-out 200ms;
+  animation: efecto-luz 2s ease-in 0 infinite normal both;
+}
+
+#b:hover::before,
+#b:hover::after {
+  border-color: #fe0000;
+}
+
+#b:hover::before {
+  filter: blur(1px);
+}
+

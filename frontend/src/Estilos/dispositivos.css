@@ -1,0 +1,124 @@
+.control-pagee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ancho aumentado */
+    max-width: 1400px; /* Ancho máximo aumentado */
+    margin: 50px auto; /* Aumenta el margen superior e inferior */
+    position: relative;
+  }
+  
+  .control-pagee table {
+    border-collapse: collapse;
+    width: 100%; /* Asegurarse de que la tabla se estire completamente */
+    margin-top: 20px;
+  }
+  
+  .control-pagee th, .control-pagee td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 12px; /* Espaciado interno aumentado para más legibilidad */
+  }
+  
+  .control-pagee th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Centra el botón "Agregar Nuevo Dispositivo" debajo del título */
+  .btn-agregaar {
+    background-color: rgb(84, 82, 82);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    align-self: flex-end; /* Alinea el botón hacia el final de la línea flex */
+  }
+  
+  .btn-agregaar:hover {
+    background-color: rgb(47, 47, 47);
+  }
+  
+  .btn-eliminaar {
+    background-color: #d30505; /* Rojo */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-eliminaar:hover {
+    background-color: #790404; /* Rojo más oscuro */
+  }
+  
+  .btn-admin {
+    background-color: #4d4d4c; /* Gris */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px; /* Espacio entre botones */
+  }
+  
+  .btn-admin:hover {
+    background-color: #146504; /* Verde oscuro */
+  }
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-wrap {
+    flex: 1;
+  }
+  
+  .footer {
+    flex-shrink: 0;
+  }
+  .control-pagee .table-container {
+    width: 100%; /* Usa el ancho completo del contenedor padre */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espacio alrededor del contenido */
+  }
+  
+  .control-pagee table {
+    /* Tus estilos para la tabla, asegúrate de que permitan centrado */
+    margin: auto; /* Este es el cambio clave para centrar la tabla */
+  }
+  /* Estilos para el contenedor del formulario y la tabla */
+.formu-table-container {
+  background-color: #F1D2B1;
+  padding: 20px;
+  margin-inline: 5%;
+  margin-bottom: 6%;
+  margin-top: 30px;
+}
+
+/* Estilos para la tabla */
+.formu-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.formu-table th,
+.formu-table td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.formu-table th {
+  background-color: #ffa07a;
+  color: #000000  ;
+}

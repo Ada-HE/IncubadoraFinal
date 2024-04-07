@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+/* Reset de estilos */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: .5px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+/* Estilos generales de la página */
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    color: #ffffff; /* Texto */
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f1d2b1; /* Fondo principal */
+    overflow-x: hidden;
+}
+
+/* Estilos para secciones */
+section {
+    padding: 3.9rem 0;
+    overflow: hidden;
+}
+
+/* Estilos para imágenes */
+img {
+    width: 30%;
+    max-width: 100%;
+}
+
+/* Estilos para enlaces */
+a {
+    text-decoration: none;
+    display: block;
+    color: #ffffff; /* Texto */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+/* Estilos para párrafos */
+p {
+    font-size: 1.6rem;
+    color: #4a4a4a; /* Descripciones */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 4px 2.4rem;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 115px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #f7c188; /* Fondo principal y estilos de navegación */
+    box-shadow: 0px 2px 5px #000000; /* Sombras */
+}
+
+/* Estilos para la barra de navegación */
+.nav {
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle {
+    color: #ffffff; /* Texto */
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2.5rem;
+    cursor: pointer;
+    z-index: 1500;
+}
+
+/* Más estilos para la barra de navegación */
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100vh;
+    background-color: #252525;
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    transform: translateX(-100%);
+}
+
+.fa-times {
+    display: none;
+}
+
+.nav::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+
+.open .fa-times {
+    display: block;
+}
+
+.open .fa-bars {
+    display: none;
+}
+
+.open .nav-list {
+    transform: translateX(0);
+}
+
+.open .nav::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    align-items: flex-start;
+    color: #ffffff; /* Texto */
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.brand-name {
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* Texto */
+    margin-left: 1rem; /* Espacio entre el logo y el texto */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.nav-item {
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+.nav-link:hover {
+    color: hsl(0, 0%, 0%);
+}
+
+ul {
+    list-style: inside; /* Puntos dentro para ahorrar espacio */
+    padding-left: 1rem;
+    color: #000000;
+    font-size: 12px;
+}
+
+/* Botones y llamados a la acción */
+.cta-btn {
+    background-color: #CC6214; /* Color temático para botones */
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #E67E22; /* Un poco más claro al pasar el cursor */
+}
+
+.call-to-action {
+    text-align: center; /* Centrar CTA para darle énfasis */
+    margin-top: 2rem;
+}
+
+/* Estilo para imágenes */
+.menu-item img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/*Hero*/
+.hero {
+    /* Comentado para no usar imagen */
+    /* background: url("../imagenescolorida/hamburguesa_rosa_inicio.jpg") center no-repeat; */
+    width: 100%;
+    height: 70vh;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.h2-sub {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fffeff;
+    font-weight: 600;
+    line-height: .4;
+}
+
+.fil {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.head {
+    color: #fff;
+    font-size: 3.7rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+}
+
+.circle {
+    font-size: 1.5rem;
+    color: #e6d00e;
+    margin: 0 1.6rem;
+}
+
+.he-des h5 {
+    color: rgb(255, 255, 255);
+    font-size: 2.4rem;
+    font-weight: 0;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+.cta-btn {
+    font-size: 1.1rem;
+    background-color: #ffc845;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    border-radius: .4rem;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    color: #fff;
+    background-color: #e6733b;
+}
+
+.global {
+    text-align: center;
+    margin-top: 3.9rem;
+}
+
+.dis-sto {
+    background-color: rgb(173, 63, 8);
+    color: rgb(255, 255, 255);
+    padding: 6rem 1rem;
+    margin: 4rem;
+    font-size: 100px;
+    border-radius: 1% 1% 1% 1%;
+}
+
+.disco {
+    background-color: rgb(234, 121, 65);
+    color: white;
+    padding: 6rem 1rem;
+    margin: 4rem;
+    font-size: 100px;
+    border-radius: 1% 1% 1% 1%;
+}
+
+.dis-sto .global {
+    margin-top: 6.9rem;
+}
+
+.global .circle {
+    color: yellow;
+    margin: 2.4rem 0;
+}
+
+.hea-dark {
+    color: #ffc845;
+    letter-spacing: .7rem;
+    margin-right: -.7rem;
+}
+
+.global .h2-sub {
+    letter-spacing: -1px;
+    line-height: .42;
+}
+
+.res-info {
+    text-align: center;
+}
+
+.res-des {
+    margin-bottom: 3rem;
+}
+
+.res-des p {
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+}
+
+/*menu*/
+.taste {
+    /* Comentado para no usar imagen */
+    /* background: url("../imagenescolorida/fonds77.jpg") center no-repeat; */
+    background-size: cover;
+}
+
+.bt {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+/*Orden de la que va dentro del menu*/
+.image-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.disco .res-des {
+    padding-top: 3rem;
+    margin-bottom: 0;
+}
+
+.box {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #FFF7F0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulo {
+    text-align: center;
+    color: #cc6214;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.d2 .Psistema {
+    color: #000000;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/*footer*/
+footer {
+    padding: 7.9rem 0;
+    background-color: #381904;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section h3, .footer-section p, .footer-section ul, .footer-section a {
+    color: white;
+}
+.footer-section {
+    flex-basis: 30%;
+    margin: 20px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.footer-content {
+    overflow: hidden;
+}
+
+.footer-content h4 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.footer-content .circle {
+    margin: 2.4rem 0;
+}
+
+.footer-content-about {
+    margin-bottom: 5.4rem;
+}
+
+.footer-content-about p {
+    line-height: 2;
+}
+
+.footer-section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-section a {
+    color: #fff;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.icono {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.icono:hover {
+    transform: scale(1.1);
+}
+
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: #e7ce14;
+    padding: .8rem 2rem;
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
+    color: #f51c1c;
+}
+
+.news-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.news-input {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+.news-btn {
+    background: transparent;
+    border: none;
+    color: #252525;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1px .6rem;
+    position: absolute;
+    top: 30%;
+    margin-left: 20.5rem;
+}
+
+/*native*/
+@media screen and (min-width: 900px) {
+
+    section {
+        padding: 5 rem;
+        padding-top: 5rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        justify-content: initial;
+        flex-direction: row;
+        transform: translateX(30px);
+        transition: initial;
+    }
+
+    .nav-item {
+        margin: 0 2.4rem;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .active {
+        position: relative;
+    }
+
+    .active::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        bottom: -3px;
+    }
+
+    .h2-sub {
+        font-size: 3rem;
+    }
+
+    .fil {
+        font-size: 3rem;
+    }
+
+    .head {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+    }
+
+    .res-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .res-info>div {
+        flex: 1;
+    }
+
+    .pad-rig {
+        padding-right: 7rem;
+    }
+
+    .footer-content {
+        max-width: 77.5rem;
+        margin: auto;
+    }
+
+    .footer-content-about {
+        max-width: 51.3rem;
+        margin: 0 auto 5.4rem;
+    }
+
+    .footer-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media,
+    .news-form {
+        width: 100%;
+        max-width: 27.3rem;
+        margin: 0 1rem;
+    }
+
+    .news-btn {
+        margin-left: 7.5rem;
+    }
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box {
+    /*width: calc(25% - 10px);  Divide el espacio en cuatro partes */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.carousel-item {
+    height: 400px; /* o el alto que desees */
+}
+
+.carousel-item img {
+    width: auto;
+    max-width: 100%;
+    height: 100%; /* para que las imágenes se ajusten al contenedor */
+}
+
+.menu-item {
+    width: 400px; /* Ancho fijo para el contenedor de la imagen */
+    height: 250px; /* Altura fija para el contenedor de la imagen, ajusta según sea necesario */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda este contenedor */
+}
+
+.menu-item img {
+    width: 100%;
+    height: 30%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área del contenedor sin deformarse */
+}
