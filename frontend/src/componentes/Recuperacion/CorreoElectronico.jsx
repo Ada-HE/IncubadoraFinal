@@ -6,7 +6,7 @@ import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import '../../Estilos/style_recuperacion.css';
 
-
+var apiKey = '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';
 function ValidarCorreo() {
     const navigate = useNavigate();
     const [correo, setCorreo] = useState('');
